@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-teleology",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Code structure for teleology javascript projects",
   "main": "index.js",
   "files": [
@@ -12,6 +12,9 @@
   },
   "bugs": {
     "url": "https://github.com/teleology-io/eslint-config-teleology/issues"
+  },
+  "scripts": {
+    "test": "echo \"NOT YET IMPLEMENTED\""
   },
   "author": "Chris Sullivan",
   "license": "MIT",
