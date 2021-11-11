@@ -16,8 +16,9 @@ module.exports = {
     }
   },
   "plugins": [
-    "react",
-    "prettier"
+    "import",
+    "prettier",
+    "react"
   ],
   "rules": {
     "arrow-parens": [

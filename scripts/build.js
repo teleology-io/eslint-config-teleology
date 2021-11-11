@@ -1,7 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable import/no-dynamic-require */
 // Generate variants based off of base
-const merge = require('lodash.merge');
+const mergewith = require('lodash.mergewith');
 const fs = require('fs');
 
 const base = require('../variants/base.config');
@@ -27,8 +27,9 @@ const variants = [
 variants.forEach((variant) => {
   const { path, config } = variant;
 
-  const options = merge(base, require(config));
+  const mergeCustomizer = (a, b) =>
+    Array.isArray(a) && Array.isArray(b) ? a.concat(b) : undefined;
+  const options = mergewith(base, require(config), mergeCustomizer);
 
-  console.log('options', options);
   writeModule(path, options);
 });
