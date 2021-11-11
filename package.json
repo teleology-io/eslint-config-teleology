@@ -1,10 +1,11 @@
 {
   "name": "eslint-config-teleology",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Code structure for teleology javascript projects",
   "main": "index.js",
   "files": [
-    "index.js"
+    "index.js",
+    "react.js"
   ],
   "repository": {
     "type": "git",
@@ -14,7 +15,10 @@
     "url": "https://github.com/teleology-io/eslint-config-teleology/issues"
   },
   "scripts": {
-    "test": "echo \"NOT YET IMPLEMENTED\""
+    "test": "echo \"NOT YET IMPLEMENTED\"",
+    "prepare": "node ./scripts/build.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "author": "Chris Sullivan",
   "license": "MIT",
@@ -22,6 +26,14 @@
     "eslint": "^7.6.0",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-config-teleology": "1.0.4",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "lodash.merge": "^4.6.2",
     "prettier": "^2.2.1"
   }
 }

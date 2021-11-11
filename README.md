@@ -16,6 +16,14 @@ module.exports = {
 };
 ```
 
+## React Support
+
+```javascript
+module.exports = {
+  extends: ['teleology/react'],
+};
+```
+
 ## Scripts
 
 You can now add these two scripts to your package.json to run lint locally.
