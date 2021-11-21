@@ -1,11 +1,12 @@
 {
   "name": "eslint-config-teleology",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Code structure for teleology javascript projects",
   "main": "index.js",
   "files": [
     "index.js",
-    "react.js"
+    "react.js",
+    "solidjs.js"
   ],
   "repository": {
     "type": "git",
