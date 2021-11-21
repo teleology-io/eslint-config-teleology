@@ -22,6 +22,10 @@ const variants = [
     path: 'index.js',
     config: '../variants/index.config.js',
   },
+  {
+    path: 'solidjs.js',
+    config: '../variants/solidjs.config.js',
+  },
 ];
 
 variants.forEach((variant) => {
